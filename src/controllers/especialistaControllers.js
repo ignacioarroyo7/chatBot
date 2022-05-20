@@ -1,3 +1,4 @@
+import Especialista from "../models/especialista";
 const especialistaCtrl={}
 
 especialistaCtrl.obtenerEspecialistas = async()=>{
