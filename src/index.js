@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
+import './database'
 
 const app = express();
 app.set('port', process.env.PORT || 3000);
