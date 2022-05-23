@@ -2,18 +2,25 @@ import mongoose, {Schema} from "mongoose";
 
 const turnoSchema = new Schema({
     fecha : {
-        type:string
+        type:String,
+        unique: true
     },
     nombre: {
-        type:string
+        type:String
     },
     apellido: {
-        type:string
+        type:String
     },
     celular: {
-        type: string
+        type:String
     },
+    mail: {
+        type: String
+    },
+    especialidad:{
+        type:String
+    }
 })
 
 const Turno = mongoose.model('turno',turnoSchema)
-export default Turno;
+module.exports = Turno;

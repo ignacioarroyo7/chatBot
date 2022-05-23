@@ -13,4 +13,4 @@ const especialistaSchema = new Schema({
 })
 
 const Especialista = mongoose.model('especialista',especialistaSchema);
-export default Especialista;
+module.exports= Especialista;
